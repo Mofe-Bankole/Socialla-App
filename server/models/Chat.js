@@ -11,6 +11,4 @@ const ChatSchema = new mongoose.Schema({
   lastUpdated: { type: Date, default: Date.now },
 });
 
-const Chat = mongoose.model("Chat", ChatSchema);
-
-module.exports = Chat;
+module.exports = mongoose.model("Chat", ChatSchema);

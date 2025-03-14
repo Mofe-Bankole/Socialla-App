@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const User = require("../models/User");
 
 // Signup

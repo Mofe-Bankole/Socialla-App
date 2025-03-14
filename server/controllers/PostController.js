@@ -1,5 +1,4 @@
-import Post from "../models/Post";
-
+const Post = require("../models/Post");
 
 // Create a new post
 const createNewPost = async (req, res) => {
@@ -19,9 +18,6 @@ const createNewPost = async (req, res) => {
   }
 };
 
-
-
-
 // Get all posts
 const getAllPosts = async (req, res) => {
   try {
@@ -32,9 +28,6 @@ const getAllPosts = async (req, res) => {
     res.status(500).json({ message: "Server error", error });
   }
 };
-
-
-
 
 // Get a single post by ID
 const getPostById = async (req, res) => {
@@ -48,9 +41,6 @@ const getPostById = async (req, res) => {
     res.status(500).json({ message: "Server error", error });
   }
 };
-
-
-
 
 // Update a post
 const updatePost = async (req, res) => {
@@ -71,9 +61,6 @@ const updatePost = async (req, res) => {
   }
 };
 
-
-
-
 // Delete a post
 const deletePost = async (req, res) => {
   try {
@@ -88,8 +75,10 @@ const deletePost = async (req, res) => {
   }
 };
 
-
-
-
-// eslint-disable-next-line no-undef
-module.export = { createNewPost , getAllPosts , updatePost , deletePost , getPostById};
+module.exports = {
+  createNewPost,
+  getAllPosts,
+  updatePost,
+  deletePost,
+  getPostById,
+};

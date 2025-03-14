@@ -1,6 +1,5 @@
-import Comment from "../models/Comment";
-import Post from "../models/Post";
-
+const Chat = require("./../models/Chat");
+const Post = require("./../models/Post");
 
 // Create a new comment
 const createNewComment = async (req, res) => {
@@ -48,5 +47,4 @@ const deleteComment = async (req, res) => {
   }
 };
 
-// eslint-disable-next-line no-undef
 module.exports = { createNewComment, getAllComments, deleteComment };

@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const express = require("express");
 const cors = require("cors");
 const connectDB = require("./db/database");

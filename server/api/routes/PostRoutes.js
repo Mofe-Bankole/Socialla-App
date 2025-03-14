@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 const express = require("express");
 const {
   createNewPost,
@@ -16,4 +15,5 @@ router.get("/posts", getAllPosts);
 router.get("/post/delete/:id", getPostById);
 router.post("/post/update", updatePost);
 router.delete("/post/delete", deletePost);
+
 module.exports = router;

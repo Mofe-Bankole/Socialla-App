@@ -1,4 +1,4 @@
-import Chat from "../models/Chat";
+const Chat = require("./../models/Chat");
 
 const sendNewChat = async (req, res) => {
   try {
