@@ -1,0 +1,149 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+} */
+.notification-cont2{
+    width: 60%;
+    margin-right: 11%;
+}
+.notifications-container {
+    background: white;
+    /* max-width: 700px; */
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.header h2 {
+    font-size: 18px;
+}
+
+.badge {
+    background: orange;
+    color: white;
+    padding: 3px 8px;
+    font-size: 14px;
+    border-radius: 12px;
+}
+
+.header-icons i {
+    font-size: 18px;
+    color: #777;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.notification-list {
+    padding: 10px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 11px;
+    background: white;
+    transition: 0.3s;
+}
+
+.notification:hover {
+    background: #f0f0f0;
+}
+
+.notification.new {
+    background: #e8f1ff;
+}
+
+.notification.old {
+    background: #ecf9ec;
+}
+
+.notification img, 
+.notification .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.notification .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+    color: white;
+    font-weight: bold;
+}
+
+.notification .avatar.red {
+    background: red;
+}
+
+.content p {
+    font-size: 14px;
+    color: #333;
+}
+
+.content .time {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-top: 5px;
+}
+
+.date-label {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .notifications-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .notifications-container {
+        max-width: 100%;
+    }
+
+    .notification {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .notification img, 
+    .notification .avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .content p {
+        font-size: 13px;
+    }
+}

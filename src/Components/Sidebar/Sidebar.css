@@ -1,0 +1,36 @@
+
+.app-sidebar-container{
+    width: 18%;
+    max-height: 90vh;
+    overflow-y: auto;
+    color: rgb(85, 85, 85);
+    top: 90px;
+    left : 0;
+    position: sticky;
+    bottom: 0;
+  
+}
+.side-bar-section1, .side-bar-section2{
+    width: 90%;
+    /* margin-left: 7%; */
+    background-color: white;
+    border-radius: 10px;
+    margin:15px 5% ;
+    padding: 0px 12px;
+
+}
+.main-content{
+    background-color: rgb(247, 247, 248);
+    display: flex;
+
+}
+.side-bar-section1 div, .side-bar-section2 div{
+   
+    font-size: 17px;
+}
+.side-bar-section1 div p, .side-bar-section2 div p{
+    padding-bottom: 30px;
+}
+.side-bar-section1-header{
+    padding: 22px 0;
+}
