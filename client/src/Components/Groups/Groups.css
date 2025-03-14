@@ -1,0 +1,96 @@
+/* *{
+    padding: 0;
+    margin: 0;
+   
+} */
+.group-content{
+    width: 82%;
+    background-color: rgb(247, 247, 248);
+    height: 100vh;
+    padding: 0 10%;
+    margin-top: 30px;
+    /* margin: 0 11%; */
+}
+.group-navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: white;
+    align-items: center;
+    padding: 50px 0;
+}
+.header{
+    font-size: 22px;
+    margin-left: 50px;
+}
+
+.groups-search{
+  border: none;
+  outline: none;
+  width: 335px;
+ height:45px;
+background-color: rgb(240, 235, 235);
+border: 1px solid rgb(240, 235, 235);
+color: rgb(85, 85, 85);
+font-size: 14px;
+margin-right: 50px;
+padding-left: 15px;
+}
+.groups-divcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.groups-divcard{
+    width: 48%;
+    margin: 40px 0px;
+}
+.groups-divcard-data{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    /* margin: 40px 0px; */
+
+}
+.groups-divcard-data1{
+    display: flex;
+
+}
+.groups-divcard-data-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 40px;
+    left: 30px;
+    border: 8px solid white;
+}
+.groups-divcard-data-name{
+    padding-left: 45px;
+    padding-top: 18px;
+    padding-bottom: 50px;
+}
+.groups-divcard-data-name p{
+    font-size: 17px;
+}
+.groups-divcard-profile-background-image{
+    width: 100%;
+    height: 140px;
+    /* background-size: contain; */
+    object-fit: cover;
+}
+.groups-divcard-data-follow{
+    border: none;
+    border-radius: 30px;
+    padding: 14px 27px;
+    font-size: 14px;
+    margin-right: 25px;
+    background-color: #6a0dad;
+    color: white;
+    margin-top: 24px;
+}
+/* @media (max-width:"1100px") {
+    .groups-divcards{
+        
+    }
+} */
