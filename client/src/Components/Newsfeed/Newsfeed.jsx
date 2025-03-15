@@ -23,68 +23,113 @@ function Newsfeed() {
   };
   return (
     <>
-      <div class="home-content">
-        <div class="home-content-section1">
-          <div class="items1">
-            <div class="stories">
-              <div class="story1 story1-empty">hi</div>
-              <div class="story1">
+      <div class="home-content-section">
+        <div className="main-section">
+          <div class="home-content-section-1">
+            <div class="stories-container">
+              <div class="story-item story-item-empty">hi</div>
+              <div class="story-item">
                 <img
                   src="https://images.pexels.com/photos/1204678/pexels-photo-1204678.png?auto=compress&cs=tinysrgb&w=600"
-                  class="story1-img"
+                  class="story-item-img"
                 />
               </div>
-              <div class="story1">
+              <div class="story-item">
                 <img
                   src="https://images.pexels.com/photos/3692621/pexels-photo-3692621.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="story1-img"
+                  class="story-item-img"
                 />
               </div>
-              <div class="story1">
+              <div class="story-item">
                 <img
                   src="https://images.pexels.com/photos/10412892/pexels-photo-10412892.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="story1-img"
+                  class="story-item-img"
                 />
               </div>
-              <div class="story1">
+              <div class="story-item">
                 <img
                   src="https://images.pexels.com/photos/6831597/pexels-photo-6831597.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  class="story1-img"
+                  class="story-item-img"
+                />
+              </div>
+              <div class="story-item">
+                <img
+                  src="https://images.pexels.com/photos/10412892/pexels-photo-10412892.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="story-item-img"
+                />
+              </div>
+              <div class="story-item">
+                <img
+                  src="https://images.pexels.com/photos/6831597/pexels-photo-6831597.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="story-item-img"
+                />
+              </div>
+              <div class="story-item">
+                <img
+                  src="https://images.pexels.com/photos/10412892/pexels-photo-10412892.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="story-item-img"
+                />
+              </div>
+              <div class="story-item">
+                <img
+                  src="https://images.pexels.com/photos/6831597/pexels-photo-6831597.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  class="story-item-img"
                 />
               </div>
             </div>
-            <img
-              src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600"
-              class="create-post-textarea-image"
-            />
+
             <div class="create-post">
               <div class="create-post-header">
-                <i class="fa fa-pencil create-post-icon" aria-hidden="true"></i>
-                Create Post
+                <img
+                  src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  className="create-post-textarea-image"
+                />
+                {/* <i class="fa fa-pencil create-post-icon" aria-hidden="true"></i> */}
+                <span>Create Post</span>
               </div>
               <form onSubmit={handlePostSubmit} class="create-post-textarea">
-                <input
+                <textarea
+                  maxLength={160}
                   placeholder="Make a Post..."
                   type="text"
                   onChange={(e) => setPostContent(e.target.value)}
-                ></input>
+                ></textarea>
+                <div className="create-post-items-container">
+                  <div className="create-post-item">
+                    <i className="fa fa-video-camera" aria-hidden="true"></i>
+                    <span>Live Video</span>
+                  </div>
+                  <div className="create-post-item">
+                    <i className="fa fa-picture-o" aria-hidden="true"></i>
+                    <span>Photo/Video</span>
+                  </div>
+                  <div className="create-post-item">
+                    <i className="fa fa-camera" aria-hidden="true"></i>
+                    <span>Feeling activity</span>
+                  </div>
+                </div>
+                <input type="submit" value="Post" />
               </form>
-              <div class="create-post-items">
-                <p>
-                  <i class="fa fa-video-camera" aria-hidden="true"></i>
-                  Live Video
-                </p>
-                <p>
-                  <i class="fa fa-picture-o" aria-hidden="true"></i>
-                  Photo/Video
-                </p>
-                <p>
-                  <i class="fa fa-camera" aria-hidden="true"></i>
-                  Feeling/Activity
-                </p>
-              </div>
             </div>
           </div>
+          <div className="home-content-section-2">
+            <Posts />
+          </div>
+
+          <div className="home-section-3">
+            <Events />
+          </div>
+
+          <div className="home-content-section-3">
+            <Lives />
+          </div>
+          <div className="home-container-4">
+            <SuggestGroups />
+          </div>
+        </div>
+
+        <div className="right-section">
+          {/* friend request section */}
           <div class="friend-request">
             <div class="friend-request-header">
               <p>Friend Request</p>
@@ -152,17 +197,7 @@ function Newsfeed() {
             </div>
           </div>
         </div>
-        <div className="home-content-section2">
-          <Posts />
-          <Events />
-        </div>
-
-        <div className="home-content-section3">
-          <Lives />
-          <SuggestGroups />
-        </div>
       </div>
-      {/* </div> */}
     </>
   );
 }
