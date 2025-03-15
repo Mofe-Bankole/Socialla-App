@@ -231,6 +231,12 @@ body {
   font-size: 17px;
   resize: none;
 }
+
+.create-post-textarea > input {
+  background-color: #6a0dad;
+  color: #ffffff;
+}
+
 .create-post-icon {
   padding-right: 10px;
   color: #6a0dad;
