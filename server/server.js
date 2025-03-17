@@ -17,7 +17,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/chat", chatRoutes);
 
-app.use("/api/posts", postRoutes);
+app.use("/api/post", postRoutes);
 app.use("/api/post/comment", commentRoutes);
 
 connectDB().then(() => {

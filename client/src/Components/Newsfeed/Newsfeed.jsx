@@ -10,7 +10,7 @@ function Newsfeed() {
   const handlePostSubmit = async (e) => {
     try {
       e.preventdefault();
-      const res = await fetch("http://localhost:5000/api/posts/post", {
+      const res = await fetch("http://localhost:5000/api/post/", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({ postContent }),
@@ -90,7 +90,7 @@ function Newsfeed() {
               <form onSubmit={handlePostSubmit} class="create-post-textarea">
                 <textarea
                   maxLength={160}
-                  placeholder="Make a Post..."
+                  placeholder="Make a Post"
                   type="text"
                   onChange={(e) => setPostContent(e.target.value)}
                 ></textarea>

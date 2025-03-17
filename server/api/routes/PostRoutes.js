@@ -10,7 +10,7 @@ const {
 const router = express.Router();
 
 // Signup route
-router.post("/post", createNewPost);
+router.post("/", createNewPost);
 router.get("/posts", getAllPosts);
 router.get("/post/delete/:id", getPostById);
 router.post("/post/update", updatePost);

@@ -1,6 +1,3 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Newsfeed from "./Components/Newsfeed/Newsfeed";
 import Navbar from "./Components/Navbar/Navbar";
@@ -17,12 +14,17 @@ import SavedAddressMain from "./Pages/SavedAddressMain";
 import ChangePasswordMain from "./Pages/ChangePasswordMain";
 import SocialNetworkMain from "./Pages/SocialNetworkMain";
 import NotificationMain from "./Pages/NotificationMain";
+import SignUp from "./Components/SignUp";
+import Login from "./Components/Login";
+
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
       <Routes>
+        <Route excat path="/signup" element={<SignUp />} />
+        <Route excat path="/login" element={<Login />} />
         <Route exact path="/" element={<NewsfeedMain />} />
         <Route exact path="/StoriesMain" element={<StoriesMain />} />
         <Route exact path="/GroupsMain" element={<GroupsMain />} />
